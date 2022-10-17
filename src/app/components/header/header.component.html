@@ -1,0 +1,32 @@
+<header>
+    <div class="navbar navbar-dark bg-success shadow-sm">
+        <!-- <div class="navbar-brand align-item-center d-flex">
+            <i style="font-size: 35px;" class="fas fa-shipping-fast"></i>&nbsp;
+            <strong style="font-size: 30px;">E-cart</strong> 
+        </div> -->
+        <div class=Homecontainer>
+            <div class="topnav">
+              <h2>{{date|date:'shortDate'}}</h2>&nbsp;
+            <h2>{{date|date:'shortTime'}}</h2>
+             
+              <img [src]='src'>
+          
+          
+              <a class="active" routerLink="/home">Home</a>
+              <!-- <a routerLink="/about">Favourites</a> -->
+              <a routerLink="/login">Login</a>
+              <a routerLink="/editProfile">Edit Profile</a>
+              <a routerLink="/products">Vegetables and Fruits</a>
+              <a routerLink="/feedback">Feedback</a>
+              <a routerLink="/contact">Contact Us</a>
+              <div class="cart">
+              <button routerLink="cart" class="btn btn-primary">
+                <i style="font-size:30px;" class="fas fa-cart-plus"></i>
+                <div class="badge bg-danger">{{totalItem}}</div>
+            </button>
+            </div>
+        </div>
+      
+    </div>
+</div>
+</header>
